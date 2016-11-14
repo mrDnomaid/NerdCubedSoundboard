@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Nerd³ Soundboard</title>
+  </head>
+  <body>
+    <div id="top-bit" class="red accent-4 hoverable">
+      <h1>Nerd³ Soundboard</h1>
+    </div>
+
+    <div id="the-buttons">
+      <button onclick="play('WTF-WAS-THAT');" class="waves-effect waves-light red darken-2 btn">WTF WAS THAT?!</button>
+      <button onclick="play('this-game-costs-real-money');" class="waves-effect waves-light red darken-2 btn">This game costs real money.</button>
+      <button onclick="play('omg-jeff-the-shark-can-fly');" class="waves-effect waves-light red darken-2 btn">OMG, JEFF THE SHARK CAN FLYYY!</button>
+      <button onclick="play('WAKE-UP');" class="waves-effect waves-light red darken-2 btn">WAKE UP!</button>
+      <button onclick="play('hello');" class="waves-effect waves-light red darken-2 btn">Hello Procrastinators!</button>
+      <button onclick="play('Ta-ra');" class="waves-effect waves-light red darken-2 btn">Ta-ra, Procrastinators!</button>
+      <button onclick="play('bye');" class="waves-effect waves-light red darken-2 btn">Goodbye, Procrastinators!</button>
+      <button onclick="play('crap-on-a-cracker');" class="waves-effect waves-light red darken-2 btn">Crap on a cracker!</button>
+      <button onclick="play('no-no-no-no-no');" class="waves-effect waves-light red darken-2 btn">No! No! No! No! No!</button>
+      <button onclick="play('narrrrrrrrse');" class="waves-effect waves-light red darken-2 btn">Narrrrrrrrse! Arsing, Arsing Arse. Arse.</button>
+      <button onclick="play('OI-yellow-line-ya-dick');" class="waves-effect waves-light red darken-2 btn">OI! Yellow line, ya dick!</button>
+    </div>
+
+    <div id="footer">
+      <p>Sound clips from <a href="http://nerdcubed.co.uk" target="_blank" rel="noopener noreferrer" class="n3">Nerd³</a></p>
+      <p>A <a href="https://dnomaid.co.uk/?utm_source=footer&utm_medium=nerdcubedsoundboard" target="_blank" rel="noopener noreferrer" class="dnomaid">dnomaid</a> thing</p>
+    </div>
+
+    <script>
+    function play(sound) {
+      var thing = new Audio('sounds/' + sound + '.mp3');
+      thing.play();
+    }
+    </script>
+  </body>
+</html>
