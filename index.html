@@ -12,7 +12,7 @@
       <h1>Nerd³ Soundboard</h1>
     </div>
 
-    <div id="the-buttons">
+    <div id="the-stuff">
       <button onclick="play('WTF-WAS-THAT');" class="waves-effect waves-light red darken-2 btn">WTF WAS THAT?!</button>
       <button onclick="play('this-game-costs-real-money');" class="waves-effect waves-light red darken-2 btn">This game costs real money.</button>
       <button onclick="play('omg-jeff-the-shark-can-fly');" class="waves-effect waves-light red darken-2 btn">OMG, JEFF THE SHARK CAN FLYYY!</button>
@@ -29,13 +29,20 @@
     <div id="footer">
       <p>Sound clips from <a href="http://nerdcubed.co.uk" target="_blank" rel="noopener noreferrer" class="n3">Nerd³</a></p>
       <p>A <a href="https://dnomaid.co.uk/?utm_source=footer&utm_medium=nerdcubedsoundboard" target="_blank" rel="noopener noreferrer" class="dnomaid">dnomaid</a> thing</p>
-      <p><a href="https://www.reddit.com/r/nerdcubed/comments/5cvv8q/9_months_ago_i_posted_that_i_was_making_a_n³/" target="_blank" rel="noopener noreferrer" class="reddit">Submit something in the reddit thread</a></p>
+      <p><a href="https://www.reddit.com/r/nerdcubed/comments/5cvv8q/9_months_ago_i_posted_that_i_was_making_a_n³/" target="_blank" rel="noopener noreferrer" class="reddit">Suggest something in the reddit thread</a></p>
     </div>
 
     <script>
     function play(sound) {
       var thing = new Audio('sounds/' + sound + '.mp3');
       thing.play();
+      window.location.hash = sound;
+    }
+
+    if(window.location.hash != '') {
+      var requestedsound = window.location.hash;
+      nohash = requestedsound.replace('#','');
+      play(nohash);
     }
     </script>
   </body>

@@ -21,13 +21,16 @@ body {
   font-size: 4.5vw;
   margin: 0;
 }
-#the-buttons {
+#the-stuff {
   margin: 0 auto;
   width: 75%;
   text-align: center;
 }
-#the-buttons button {
+#the-stuff button {
   margin-bottom: 5px;
+}
+#the-stuff p {
+  color: #999;
 }
 #footer {
   margin-top: 50px;
