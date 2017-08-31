@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#d50000">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <link href="icon.png" type="img/png" rel="shortcut icon">
-    <title>Nerd³ Soundboard</title>
-  </head>
-  <body>
-    <div id="top-bit" class="red accent-4 hoverable">
-      <h1>Nerd³ Soundboard</h1>
-    </div>
 
-    <div id="the-stuff">
-      <button onclick="play('WTF-WAS-THAT');" class="waves-effect waves-light red darken-2 btn">WTF WAS THAT?!</button>
-      <button onclick="play('this-game-costs-real-money');" class="waves-effect waves-light red darken-2 btn">This game costs real money.</button>
-      <button onclick="play('omg-jeff-the-shark-can-fly');" class="waves-effect waves-light red darken-2 btn">OMG, JEFF THE SHARK CAN FLYYY!</button>
-      <button onclick="play('WAKE-UP');" class="waves-effect waves-light red darken-2 btn">WAKE UP!</button>
-      <button onclick="play('crap-on-a-cracker');" class="waves-effect waves-light red darken-2 btn">Crap on a cracker!</button>
-      <button onclick="play('no-no-no-no-no');" class="waves-effect waves-light red darken-2 btn">No! No! No! No! No!</button>
-      <button onclick="play('narrrrrrrrse');" class="waves-effect waves-light red darken-2 btn">Narrrrrrrrse! Arsing, Arsing Arse. Arse.</button>
-      <button onclick="play('bastard-toast');" class="waves-effect waves-light red darken-2 btn">Bastard Toast</button>
-      <button onclick="play('OI-yellow-line-ya-dick');" class="waves-effect waves-light red darken-2 btn">OI! Yellow line, ya dick!</button>
-      <button onclick="play('air');" class="waves-effect waves-light red darken-2 btn">Inhaling a swimming pool sized amount of air in about a femtosecond</button>
-      <button onclick="play('i-have-a-flying-plane');" class="waves-effect waves-light red darken-2 btn">I HAVE A FLYING PLANE!</button>
-      <button onclick="play('anybody-traveling-with-children');" class="waves-effect waves-light red darken-2 btn">Anybody traveling with children, we hate you</button>
-      <button onclick="play('piss-off');" class="waves-effect waves-light red darken-2 btn">Piss. Off.</button>
-      <button onclick="play('fan-fucking-dabi-dozi');" class="waves-effect waves-light red darken-2 btn">Fan-fucking-dabidozi</button>
-      <button onclick="play('random-spot-check');" class="waves-effect waves-light red darken-2 btn">Completly random spot check</button>
-      <button onclick="play('most-to-least-embarrassing');" class="waves-effect waves-light red darken-2 btn">Most to least embarrassing</button>
-      <button onclick="play('ARRGH');" class="waves-effect waves-light red darken-2 btn">ARRGH! Uhhhhhhhhh</button>
-      <button onclick="play('swanky-bus');" class="waves-effect waves-light red darken-2 btn">Oooo, that's a swanky bus</button>
-      <button onclick="play('SIMULATING');" class="waves-effect waves-light red darken-2 btn">SIMULATING!</button>
-      <button onclick="play('boom');" class="waves-effect waves-light red darken-2 btn">boom</button>
-      <button onclick="play('nice-ish');" class="waves-effect waves-light red darken-2 btn">Nice(ish)</button>
-      <button onclick="play('voldemort-to-sanitation');" class="waves-effect waves-light red darken-2 btn">Voldemort to sanitation</button>
-      <button onclick="play('go-developers-being-different');" class="waves-effect waves-light red darken-2 btn">Go developers, being different! (hope you die)</button>
-      <button onclick="play('brand-new-plan');" class="waves-effect waves-light red darken-2 btn">I've got a brand new plan</button>
-      <button onclick="play('yaaaaay');" class="waves-effect waves-light red darken-2 btn">yaaaaay</button>
-      <button onclick="play('I-hate-this-game');" class="waves-effect waves-light red darken-2 btn">I hate this game.</button>
-      <button onclick="play('im-a-water-wheel');" class="waves-effect waves-light red darken-2 btn">I'm a water wheel</button>
-      <button onclick="play('bush');" class="waves-effect waves-light red darken-2 btn">bushbushbushbushbushbushbush</button>
-      <button onclick="play('there');" class="waves-effect waves-light red darken-2 btn"><i>suction noise</i> There, I've pulled your head OUT OF YOUR ARSE!</button>
-      <button onclick="play('hello');" class="waves-effect waves-light red darken-2 btn">Hello Procrastinators!</button>
-      <button onclick="play('Ta-ra');" class="waves-effect waves-light red darken-2 btn">Ta-ra, Procrastinators!</button>
-      <button onclick="play('bye');" class="waves-effect waves-light red darken-2 btn">Goodbye, Procrastinators!</button>
-    </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d50000">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link href="icon.png" type="img/png" rel="shortcut icon">
+  <title>Nerd³ Soundboard</title>
+</head>
+
+<body>
+  <div id="top-bit" class="red accent-4 hoverable">
+    <h1><img src="Nerd3.png" alt="Nerd³" style="height: 1em;"><br>Soundboard</h1>
+  </div>
+
+  <div id="the-stuff">
+    <button onclick="play('WTF-WAS-THAT');" class="waves-effect waves-light red darken-2 btn">WTF WAS THAT?!</button>
+    <button onclick="play('this-game-costs-real-money');" class="waves-effect waves-light red darken-2 btn">This game costs real money.</button>
+    <button onclick="play('omg-jeff-the-shark-can-fly');" class="waves-effect waves-light red darken-2 btn">OMG, JEFF THE SHARK CAN FLYYY!</button>
+    <button onclick="play('WAKE-UP');" class="waves-effect waves-light red darken-2 btn">WAKE UP!</button>
+    <button onclick="play('crap-on-a-cracker');" class="waves-effect waves-light red darken-2 btn">Crap on a cracker!</button>
+    <button onclick="play('no-no-no-no-no');" class="waves-effect waves-light red darken-2 btn">No! No! No! No! No!</button>
+    <button onclick="play('narrrrrrrrse');" class="waves-effect waves-light red darken-2 btn">Narrrrrrrrse! Arsing, Arsing Arse. Arse.</button>
+    <button onclick="play('bastard-toast');" class="waves-effect waves-light red darken-2 btn">Bastard Toast</button>
+    <button onclick="play('OI-yellow-line-ya-dick');" class="waves-effect waves-light red darken-2 btn">OI! Yellow line, ya dick!</button>
+    <button onclick="play('air');" class="waves-effect waves-light red darken-2 btn">Inhaling a swimming pool sized amount of air in about a femtosecond</button>
+    <button onclick="play('i-have-a-flying-plane');" class="waves-effect waves-light red darken-2 btn">I HAVE A FLYING PLANE!</button>
+    <button onclick="play('anybody-traveling-with-children');" class="waves-effect waves-light red darken-2 btn">Anybody traveling with children, we hate you</button>
+    <button onclick="play('piss-off');" class="waves-effect waves-light red darken-2 btn">Piss. Off.</button>
+    <button onclick="play('fan-fucking-dabi-dozi');" class="waves-effect waves-light red darken-2 btn">Fan-fucking-dabidozi</button>
+    <button onclick="play('random-spot-check');" class="waves-effect waves-light red darken-2 btn">Completly random spot check</button>
+    <button onclick="play('most-to-least-embarrassing');" class="waves-effect waves-light red darken-2 btn">Most to least embarrassing</button>
+    <button onclick="play('ARRGH');" class="waves-effect waves-light red darken-2 btn">ARRGH! Uhhhhhhhhh</button>
+    <button onclick="play('swanky-bus');" class="waves-effect waves-light red darken-2 btn">Oooo, that's a swanky bus</button>
+    <button onclick="play('SIMULATING');" class="waves-effect waves-light red darken-2 btn">SIMULATING!</button>
+    <button onclick="play('boom');" class="waves-effect waves-light red darken-2 btn">boom</button>
+    <button onclick="play('nice-ish');" class="waves-effect waves-light red darken-2 btn">Nice(ish)</button>
+    <button onclick="play('voldemort-to-sanitation');" class="waves-effect waves-light red darken-2 btn">Voldemort to sanitation</button>
+    <button onclick="play('go-developers-being-different');" class="waves-effect waves-light red darken-2 btn">Go developers, being different! (hope you die)</button>
+    <button onclick="play('brand-new-plan');" class="waves-effect waves-light red darken-2 btn">I've got a brand new plan</button>
+    <button onclick="play('yaaaaay');" class="waves-effect waves-light red darken-2 btn">yaaaaay</button>
+    <button onclick="play('I-hate-this-game');" class="waves-effect waves-light red darken-2 btn">I hate this game.</button>
+    <button onclick="play('im-a-water-wheel');" class="waves-effect waves-light red darken-2 btn">I'm a water wheel</button>
+    <button onclick="play('bush');" class="waves-effect waves-light red darken-2 btn">bushbushbushbushbushbushbush</button>
+    <button onclick="play('there');" class="waves-effect waves-light red darken-2 btn"><i>suction noise</i> There, I've pulled your head OUT OF YOUR ARSE!</button>
+    <button onclick="play('hello');" class="waves-effect waves-light red darken-2 btn">Hello Procrastinators!</button>
+    <button onclick="play('Ta-ra');" class="waves-effect waves-light red darken-2 btn">Ta-ra, Procrastinators!</button>
+    <button onclick="play('bye');" class="waves-effect waves-light red darken-2 btn">Goodbye, Procrastinators!</button>
+  </div>
 
 
 
-    <div id="footer">
-      <p>Sound clips from <a href="http://nerdcubed.co.uk" target="_blank" rel="noopener noreferrer" class="n3">Nerd³</a> |
-      A <a href="https://dnomaid.co.uk/?utm_source=footer&utm_medium=nerdcubedsoundboard" target="_blank" rel="noopener noreferrer" class="dnomaid">dnomaid</a> thing |
-      <a href="https://www.reddit.com/r/nerdcubed/comments/5cvv8q/9_months_ago_i_posted_that_i_was_making_a_n³/" target="_blank" rel="noopener noreferrer" class="reddit">reddit thread</a> |
-      <a href="https://github.com/mrDnomaid/NerdCubedSoundboard" target="_blank" rel="noopener noreferrer" class="gh">GitHub</a></p>
-    </div>
+  <div id="footer">
+    A <a href="https://dnomaid.co.uk/" target="_blank" rel="noopener noreferrer" class="dnomaid">dnomaid</a> thing |
+    <a href="https://www.reddit.com/r/nerdcubed/comments/5cvv8q/9_months_ago_i_posted_that_i_was_making_a_n³/" target="_blank" rel="noopener noreferrer" class="reddit">reddit thread</a> |
+    <a href="https://github.com/mrDnomaid/NerdCubedSoundboard" target="_blank" rel="noopener noreferrer" class="gh">GitHub</a></p>
+    <p>This site isn't created by by <a href="http://nerdcubed.co.uk" target="_blank" rel="noopener noreferrer" class="n3">Nerd³</a>, obviously.</p>
+  </div>
 
-    <script>
+  <script>
     function play(sound) {
       var thing = new Audio('sounds/' + sound + '.mp3');
       thing.play();
       window.location.hash = sound;
     }
 
-    if(window.location.hash != '') {
+    if (window.location.hash != '') {
       var requestedsound = window.location.hash;
-      nohash = requestedsound.replace('#','');
+      nohash = requestedsound.replace('#', '');
       play(nohash);
     }
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
